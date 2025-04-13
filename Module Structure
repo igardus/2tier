@@ -1,0 +1,10 @@
+3-tier-app/
+├── main.tf
+├── variables.tf
+├── outputs.tf
+├── modules/
+│   ├── network/         # VPC, subnets, gateways, route tables
+│   ├── web/             # Web EC2 instance (public subnet)
+│   ├── app/             # App EC2 instance (private subnet)
+│   └── database/        # RDS instance (private subnet)
+
